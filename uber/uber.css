@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#main {
+    left: 50%;
+    text-align:center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#box {
+    position: relative;
+    text-align:center;
+    vertical-align: middle;
+    left: 35%;
+    height: 120px;
+    width: 120px;
+    background-color: black;
+    color: white;
+}
+.logo {
+    padding-top: 35%;
+}
+.signup {
+    font-size: 180%;
+}
+.safe {
+    font-size: 130%;
+}
+input[type="text"]{
+    padding: 8px;
+    width: auto;
+}
+input[type="submit"]{
+    padding: 8px;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.names {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: flex-start;
+    justify-content:space-between, space-around, space-evenly;    
+}
+.code {
+    width: 17%;
+}
+.num {
+    width: 83%;
+}
+label {
+    float: left;
+}
+.form-box{
+    padding-bottom: 25px;
+}
+
+.button{
+    background-color: rgb(12, 96, 223);
+    color: wheat;
+    padding: 10px 15px;
+    border: none;
+}
+.button:hover{
+    background: rgb(31, 127, 238);
+    color: whitesmoke;
+}
+.botom {
+    text-align:left;
+}
+.phone {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
