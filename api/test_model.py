@@ -14,3 +14,12 @@ class UserTestcase(unittest.TestCase):
     def test_add_user(self):
         user = User('robert', 'ssebintu', '0775222759', 'roxy@gmail.com', '12345678')
         self.assertEqual(user.firstname, 'robert')
+        self.assertEqual(user.surname, 'ssebintu')
+        self.assertEqual(user.phoneNumber, '0775222759')
+        
+
+    
+    def test_validate_email(self):
+        user = User('robert', 'ssebintu', '0775222759', 'roxymail.com', '12345678')
+        self.assertEqual("Invalid email entered", "Invalid email entered")
+    
