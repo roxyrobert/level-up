@@ -1,8 +1,10 @@
 import re
+my_list = []
 
-class Uber:
+class User:
 
     def __init__(self, firstname, surname, phoneNumber, email, password):
+        self._id = 0
         self.firstname = firstname
         self.surname = surname
         self.phoneNumber = phoneNumber
@@ -22,7 +24,23 @@ class Uber:
             return self.email
         print("Invalid email entered")
     
-# class Rider:
+    def add_user(self):
+
+        _id = len(my_list)
+        self._id = _id + 1
+        new_user = {
+            '_id' : self._id,
+            'firstname':self.firstname,
+            'surname' : self.surname,
+            'phoneNumber' : self.phoneNumber,
+            'email' : self.email,
+            'password' : self.password
+        }
+        my_list.append(new_user)
+        print(new_user)
+        return new_user
+
+    
 if __name__ == '__main__':
-    transport = Uber('robert', 'ssebintu', '0775222759', 'roxy@gmail.com', '12345678')
-    transport.validate_email()
+    transport = User('robert', 'ssebintu', '0775222759', 'roxy@gmail.com', '12345678')
+    transport.add_user()
