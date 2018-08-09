@@ -12,18 +12,13 @@ class User:
         self.password = password
     
     def full_name(self):
-        # full_name = '{} {}'.format(self.firstname, self.surname)
-        
         full_name =f"{self.firstname} {self.surname}"
-        print(full_name)
         return full_name
     
     def validate_email(self):
         email_regex = re.compile(r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$")
         if email_regex.match(self.email):
-            print('Valid email')
-            return self.email
-        print("Invalid email entered")
+            return "Valid email"
         return "Invalid email entered"
     
     
@@ -41,11 +36,9 @@ class User:
             'password' : self.password
         }
         my_list.append(new_user)
-        print(new_user)
-        print(my_list)
         return new_user
 
     
 if __name__ == '__main__':
-    transport = User('robert', 'ssebintu', '0775222759', 'roxy@gmail.com', '12345678')
-    transport.add_user()
+    # transport = User('robert', 'ssebintu', '0775222759', 'roxy@gmail.com', '12345678')
+    # transport.add_user()
