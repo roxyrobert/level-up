@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/roxyrobert/level-up.svg?branch=master)](https://travis-ci.org/roxyrobert/level-up)
 ## Uber Signup
 This project is about designing a user signup page that looks so much like
 that of the Uber-signup page. <br>
