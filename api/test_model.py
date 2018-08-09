@@ -1,5 +1,5 @@
 import unittest
-from model import User
+from .model import User
 
 class UserTestcase(unittest.TestCase):
     def setUp(self):
@@ -20,7 +20,11 @@ class UserTestcase(unittest.TestCase):
     def test_validate_email(self):
         user = User('robert', 'ssebintu', '0775222759', 'roxymail.com', '12345678')
         self.assertEqual("Invalid email entered", "Invalid email entered")
-    
+
+    def test_validate_email(self):
+        user = User('robert', 'ssebintu', '0775222759', 'roxy@gmail.com', '12345678')
+        self.assertEqual("Valid email", "Valid email")
+
     def test_full_name(self):
         user = User('robert', 'ssebintu', '0775222759', 'roxy@gmail.com', '12345678')
         name = user.full_name()
