@@ -16,6 +16,7 @@ class User:
         
         full_name =f"{self.firstname} {self.surname}"
         print(full_name)
+        return full_name
     
     def validate_email(self):
         email_regex = re.compile(r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$")
@@ -23,6 +24,9 @@ class User:
             print('Valid email')
             return self.email
         print("Invalid email entered")
+        return "Invalid email entered"
+    
+    
     
     def add_user(self):
 
@@ -38,6 +42,7 @@ class User:
         }
         my_list.append(new_user)
         print(new_user)
+        print(my_list)
         return new_user
 
     
