@@ -37,8 +37,3 @@ class User:
         }
         my_list.append(new_user)
         return new_user
-
-    
-if __name__ == '__main__':
-    # transport = User('robert', 'ssebintu', '0775222759', 'roxy@gmail.com', '12345678')
-    # transport.add_user()
